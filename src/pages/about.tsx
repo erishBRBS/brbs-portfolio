@@ -1,32 +1,23 @@
 import { useEffect, useState } from "react";
-import ScrollStack, { ScrollStackItem } from "../components/ScrollStack";
+import DomeGallery from "../components/DomeGallery";
 
 function About() {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setShow(true), 300); // delay animation
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
-    <div className="flex items-center justify-center min-h-screen px-6">
-      {/* Container */}
-      <div className="w-full h-[50%] p-8 flex justify-between items-center ">
-        <ScrollStack className="w-full h-screen scrollbar-hide">
-          <ScrollStackItem>
-            <h2>Card 1</h2>
-            <p>This is the first card in the stack</p>
-          </ScrollStackItem>
-          <ScrollStackItem>
-            <h2>Card 2</h2>
-            <p>This is the second card in the stack</p>
-          </ScrollStackItem>
-          <ScrollStackItem>
-            <h2>Card 3</h2>
-            <p>This is the third card in the stack</p>
-          </ScrollStackItem>
-        </ScrollStack>
+    <div className="w-full md:w-[80%] lg:w-[60%] flex flex-col items-center justify-center min-h-screen">
+      {/* Container for the DomeGallery and "About Me" text */}
+      <div className="w-full flex flex-col items-center justify-center">
+        {/* DomeGallery container */}
+<div className="w-full h-[50vh] md:h-[70vh] flex items-center justify-center">
+    <DomeGallery />
+</div>
+        {/* "About Me" text container */}
+        <div className="text-center mt-8 p-4">
+          <h1 className="text-4xl font-bold">About Me</h1>
+          <p className="mt-2 text-lg">
+            This is where you can write a short description about yourself.
+          </p>
+        </div>
       </div>
     </div>
   );

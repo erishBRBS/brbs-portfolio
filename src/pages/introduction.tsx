@@ -12,9 +12,9 @@ function Introduction() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-4 md:p-8">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-4 md:p-8 border border-amber-300">
       {/* Container - flex-col on mobile, flex-row on md screens */}
-      <div className="w-full md:w-[80%] lg:w-[60%] flex flex-col-reverse md:flex-row items-center justify-between">
+      <div className="w-full md:w-[80%] lg:w-[60%] flex flex-col-reverse md:flex-row items-center justify-between border border-amber-300">
         {/* Description container */}
         <div
           className={`flex flex-col justify-center w-full md:w-[50%] transition-all duration-1000 ease-out p-4 md:p-0
