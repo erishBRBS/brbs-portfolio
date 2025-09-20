@@ -1,0 +1,19 @@
+@layer base {
+  body {
+    font-family: "Quicksand", sans-serif;
+  }
+}
+
+@keyframes slide-bg {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-slide-bg {
+  background-size: 200% 100%;
+  animation: slide-bg 8s linear infinite alternate;
+}
