@@ -1,1 +1,5 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+body {
+  @apply font-sans;
+}
