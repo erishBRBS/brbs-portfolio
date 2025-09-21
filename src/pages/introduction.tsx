@@ -12,9 +12,9 @@ function Introduction() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-4 md:p-8 border border-amber-300">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-4 md:p-8">
       {/* Container - flex-col on mobile, flex-row on md screens */}
-      <div className="w-full md:w-[80%] lg:w-[60%] flex flex-col-reverse md:flex-row items-center justify-between border border-amber-300">
+      <div className="w-full md:w-[80%] lg:w-[60%] flex flex-col-reverse md:flex-row items-center justify-between">
         {/* Description container */}
         <div
           className={`flex flex-col justify-center w-full md:w-[50%] transition-all duration-1000 ease-out p-4 md:p-0
@@ -25,13 +25,13 @@ function Introduction() {
           <h1 className="text-lg mb-2 text-center md:text-left">
             It's a pleasure to meet you, I am
           </h1>
-          <h1 className="text-4xl mb-2 text-center md:text-left">
+          <h1 className="text-3xl mb-2 text-center md:text-left">
             John Erish Berboso.
           </h1>
-          <h1 className="text-3xl mb-2 font-bold leading-relaxed bg-gradient-to-b md:bg-gradient-to-t from-[#7f0000] via-[#510000] to-[#340000] bg-clip-text text-transparent text-center md:text-left animate-slide-bg translate-z-0">
+          <h1 className="text-2xl mb-2 font-bold leading-relaxed bg-gradient-to-b md:bg-gradient-to-t from-[#7f0000] via-[#510000] to-[#340000] bg-clip-text text-transparent text-center md:text-left animate-slide-bg translate-z-0">
             Writing code with a side of caffeine.
           </h1>
-          <div className="text-center md:text-left text-md text-gray-400">
+          <div className="text-center md:text-left text-sm text-gray-400">
             <p className="w-full md:w-[90%] mx-auto md:mx-0">
               I aspire to become a Fullstack Web Developer who builds modern,
               impactful web applications. My passion lies in crafting elegant
@@ -59,7 +59,7 @@ function Introduction() {
           <img
             src={me}
             alt="Profile"
-            className="w-2/3 md:w-full h-auto rounded-full"
+            className="w-1/3 md:w-full h-auto rounded-full"
           />
         </div>
       </div>

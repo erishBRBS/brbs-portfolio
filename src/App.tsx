@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import DotGrid from "./components/DotGrid";
 import "./App.css";
 import Introduction from "./pages/introduction";
+import Sphere from "./pages/sphere";
 import About from "./pages/about";
 
 function App() {
@@ -24,10 +25,15 @@ function App() {
             returnDuration={1.5}
           />
         </div>
-
+        
         {/* Introduction section */}
         <div className="flex items-center justify-center min-h-screen">
           <Introduction />
+        </div>
+
+        {/* Spehere section */}
+        <div className="flex items-center justify-center min-h-screen borber border-amber-400">
+          <Sphere />
         </div>
 
         {/* About section */}

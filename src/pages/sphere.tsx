@@ -1,11 +1,12 @@
 import { useEffect, useState, useRef } from "react";
 import DomeGallery from "../components/DomeGallery";
 
-function About() {
+function Sphere() {
   const [show, setShow] = useState(false);
   const aboutRef = useRef(null);
 
   useEffect(() => {
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -32,22 +33,22 @@ function About() {
   }, []);
 
   return (
-    <div
+    <div 
       ref={aboutRef}
-      className="w-full md:w-[80%] lg:w-[60%] flex flex-col items-center min-h-screen border border-amber-300"
+      className="w-full md:w-[80%] lg:w-[60%] flex flex-col items-center justify-center min-h-screen"
     >
-      <div className="text-6xl">ABOUT ME</div>
-      <div
-        className={`w-full flex flex-col items-center justify-center transition-opacity duration-1000 ease-in border border-amber-300 ${
+      {/*DomeGallery Container */}
+      <div 
+        className={`w-full flex flex-col items-center justify-center transition-opacity duration-1000 ease-in ${
           show ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="w-full h-[10vh] md:h-[70vh] flex items-center justify-center">
-          asd
+        <div className="w-full h-[100vh] md:h-[70vh] flex items-center justify-center">
+          <DomeGallery />
         </div>
       </div>
     </div>
   );
 }
 
-export default About;
+export default Sphere;
