@@ -40,15 +40,14 @@ function About() {
       ref={aboutRef}
       className="w-full md:w-[80%] lg:w-[70%] flex flex-col items-center min-h-screen gap-5"
     >
-      <div className="text-lg lg:text-5xl text-gray-300 lg:mt-20 mb-10 lg:mb-10">ABOUT ME</div>
+      <div className="text-lg lg:text-5xl text-gray-300 mt-10 lg:mt-20 mb-10 lg:mb-20">ABOUT ME</div>
       <div
         className={`w-full flex flex-col md:flex-row items-center justify-center gap-5 transition-opacity duration-1000 ease-in ${
           show ? "opacity-100" : "opacity-0"
         }`}
       >
-        {/* Unang Container */}
+        {/* Statement Container */}
         <div className="flex-1 w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 bg-black/10 border border-white/10 p-5">
-          {/* Nilalaman ng Unang Container */}
           <div className="text-left text-sm text-gray-400">
             <p className="mb-5">
               Hello! I'm{" "}
@@ -76,11 +75,10 @@ function About() {
           </div>
         </div>
 
-        {/* Pangalawang Container */}
+        {/* Terminal Container */}
         <div className="flex-1 flex justify-center items-center w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 bg-black/10 border border-white/10 p-5">
-          {/* The container below needs a defined height */}
           <div className="h-[220px] w-full flex justify-center items-center text-sm md:text-md">
-            <Terminal className="h-full">
+            <Terminal className="h-full text-gray-400">
               <TypingAnimation className="text-xs md:text-sm mt-5 md:mt-4">
                 Name:John Erish Berboso
               </TypingAnimation>
@@ -91,10 +89,10 @@ function About() {
                 Location: Meycauayan Bulacan
               </TypingAnimation>
               <TypingAnimation className="text-xs md:text-sm">
-                Hobbies: Code, Games, Sports & Fitness, Fashion, Pokemon
+                Hobbies: Code, Games, Sports & Fitness, Fashion
               </TypingAnimation>
               <TypingAnimation className="text-xs md:text-sm">
-                Motto: "Embrace the struggle; It's the foundation of strength"
+                Motto: "Life is simple; take the shot or lose the chance."
               </TypingAnimation>
             </Terminal>
           </div>

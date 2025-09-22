@@ -6,7 +6,6 @@ function Sphere() {
   const aboutRef = useRef(null);
 
   useEffect(() => {
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -33,17 +32,17 @@ function Sphere() {
   }, []);
 
   return (
-    <div 
+    <div
       ref={aboutRef}
       className="w-full md:w-[80%] lg:w-[60%] flex justify-center h-auto"
     >
       {/*DomeGallery Container */}
-      <div 
+      <div
         className={`w-full flex items-center justify-center transition-opacity duration-2000 ease-in ${
           show ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="w-full h-[100vh] md:h-[70vh] flex items-center justify-center">
+        <div className="w-full h-[100vh] md:h-[70vh] flex items-center justify-center border-b border-white/10 px-3">
           <DomeGallery />
         </div>
       </div>
