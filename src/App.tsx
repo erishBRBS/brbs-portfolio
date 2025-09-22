@@ -33,7 +33,7 @@ function App() {
         </div>
 
         {/* Spehere section */}
-        <div className="flex items-center justify-center min-h-screen"> {/* Adjust the vh */}
+        <div className="flex items-center justify-center h-[20%] border"> {/* Adjust the vh */}
           <Sphere />
         </div>
 

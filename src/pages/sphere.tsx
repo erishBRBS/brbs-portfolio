@@ -35,7 +35,7 @@ function Sphere() {
   return (
     <div 
       ref={aboutRef}
-      className="w-full md:w-[80%] lg:w-[60%] flex justify-center min-h-screen"
+      className="w-full md:w-[80%] lg:w-[60%] flex justify-center h-auto"
     >
       {/*DomeGallery Container */}
       <div 
@@ -43,7 +43,7 @@ function Sphere() {
           show ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="w-full h-[100vh] mb-10 md:h-[70vh] flex items-center justify-center">
+        <div className="w-full h-[100vh] md:h-[70vh] flex items-center justify-center">
           <DomeGallery />
         </div>
       </div>

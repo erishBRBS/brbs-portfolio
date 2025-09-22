@@ -40,7 +40,7 @@ function About() {
       ref={aboutRef}
       className="w-full md:w-[80%] lg:w-[70%] flex flex-col items-center min-h-screen gap-5"
     >
-      <div className="text-lg lg:text-5xl text-gray-300 lg:mt-20 mb-10 lg:mb-20">ABOUT ME</div>
+      <div className="text-lg lg:text-5xl text-gray-300 lg:mt-20 mb-10 lg:mb-10">ABOUT ME</div>
       <div
         className={`w-full flex flex-col md:flex-row items-center justify-center gap-5 transition-opacity duration-1000 ease-in ${
           show ? "opacity-100" : "opacity-0"
