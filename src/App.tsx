@@ -26,18 +26,19 @@ function App() {
           />
         </div>
         
+        
         {/* Introduction section */}
         <div className="flex items-center justify-center min-h-screen">
           <Introduction />
         </div>
 
         {/* Spehere section */}
-        <div className="flex items-center justify-center min-h-screen borber border-amber-400">
+        <div className="flex items-center justify-center min-h-screen">
           <Sphere />
         </div>
 
         {/* About section */}
-        <div className="flex items-center justify-center min-h-screen">
+        <div className="flex items-center justify-center min-h-screen ">
           <About />
         </div>
 
