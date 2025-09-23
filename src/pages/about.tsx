@@ -40,14 +40,14 @@ function About() {
       ref={aboutRef}
       className="w-full md:w-[80%] lg:w-[70%] flex flex-col items-center min-h-screen gap-5"
     >
-      <div className="text-lg lg:text-5xl text-gray-300 mt-10 lg:mt-20 mb-10 lg:mb-20">ABOUT ME</div>
-      <div
-        className={`w-full flex flex-col md:flex-row items-center justify-center gap-5 transition-opacity duration-1000 ease-in ${
-          show ? "opacity-100" : "opacity-0"
-        }`}
-      >
+      <div className="text-3xl lg:text-5xl text-gray-300 mt-10 lg:mt-20 mb-10 lg:mb-20">ABOUT ME</div>
+      <div className="w-full flex flex-col md:flex-row items-center justify-center gap-5">
         {/* Statement Container */}
-        <div className="flex-1 w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 bg-black/10 border border-white/10 p-5">
+        <div
+          className={`flex-1 w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 bg-black/10 border border-white/10 p-5 transition-all duration-1000 ease-out ${
+            show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+          }`}
+        >
           <div className="text-left text-sm text-gray-400">
             <p className="mb-5">
               Hello! I'm{" "}
@@ -76,7 +76,11 @@ function About() {
         </div>
 
         {/* Terminal Container */}
-        <div className="flex-1 flex justify-center items-center w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 bg-black/10 border border-white/10 p-5">
+        <div
+          className={`flex-1 flex justify-center items-center w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 bg-black/10 border border-white/10 p-5 transition-all duration-3000 ease-out ${
+            show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
+          }`}
+        >
           <div className="h-[220px] w-full flex justify-center items-center text-sm md:text-md">
             <Terminal className="h-full text-gray-400">
               <TypingAnimation className="text-xs md:text-sm mt-5 md:mt-4">
@@ -92,7 +96,7 @@ function About() {
                 Hobbies: Code, Games, Sports & Fitness, Fashion
               </TypingAnimation>
               <TypingAnimation className="text-xs md:text-sm">
-                Motto: "Life is simple; take the shot or lose the chance."
+                Motto: "Life is simple. Take the shot or lose the chance."
               </TypingAnimation>
             </Terminal>
           </div>
